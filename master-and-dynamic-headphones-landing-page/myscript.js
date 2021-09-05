@@ -1,5 +1,7 @@
-// responsive mobile menu
+// $(document).ready(function() {
 
+document.addEventListener("DOMContentLoaded", function() {     
+// responsive mobile menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -18,3 +20,5 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+});
