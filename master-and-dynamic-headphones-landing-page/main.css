@@ -178,6 +178,12 @@ a {
   object-fit: cover;
 }
 
+@media only screen and (max-width: 768px) {
+  #hero img {
+    height: 70vh;
+  }
+}
+
 #hero-copy-container {
   position: absolute;
   margin: 60px auto;
