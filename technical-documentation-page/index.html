@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Inconsolata&family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="styles.css"/>
+<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <ul id="navmenu">
+          <li class="nav-item highlight">
+            <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#basic_css">Basic CSS</a>        
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#basic_css_animation">Basic CSS Animation</a>        
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#intermediate_css_animation">Intermediate CSS Animation</a>        
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#javascript">Javascript</a>        
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>      
+      
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_HTML">
+            <header><h1>Introduction to HTML</h1></header>
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as and directly introduce content into the page. Other tags such as  surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+            <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.</p>
+            <p><i>-- HTML, Wikipedia</i></p>
+            <h3>SUMMARY</h3>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML consists of a series of elements</li>
+                <li>HTML elements tell the browser how to display the content</li>
+            </ul>
+            <p></p>
+        </section>
+
+        <section class="main-section" id="basic_css">
+            <header><h1>Basic CSS</h1></header>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+            <p>Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.</p>
+            <p>Here is an example of some basic CSS:</p>
+            <code>h1 {<br>
+                &nbsp;&nbsp;color: pink;<br>
+                }
+            </code>
+            <p>This would make our h1 text pink, like so:</p>
+            <div id="example-h1-pink"><h1>I am pink!</h1>      
+            <p>Here is another example:</p>
+            <code>body {<br>
+            &nbsp;&nbsp;background-color: lightblue;<br>
+        }
+            </code>
+            <p>The above CSS would change the background colour of the page to light blue.</p>
+        </section>
+        <section class="main-section" id="basic_css_animation">
+          <header>
+                <h1>Basic CSS Animation</h1>
+            </header>
+            <p>The animation property in CSS can be used to animate many other CSS properties such as color, background-color, height, or width. Each animation needs to be defined with the @keyframes at-rule which is then called with the animation property, like so:</p>
+            <code>.element {<br>
+        &nbsp;&nbsp;animation: pulse 5s infinite;<br>
+      }<br>
+      
+      @keyframes pulse {<br>
+        &nbsp;&nbsp;0% {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;background-color: #001F3F;<br>
+        &nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;100% {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;background-color: #FF4136;<br>
+        &nbsp;&nbsp;}<br>
+      }</code>
+          <p>If an animation has the same starting and ending properties, it’s useful to comma-separate the 0% and 100% values inside @keyframes:</p>
+          <code>
+            @keyframes pulse {<br>
+        &nbsp;&nbsp;0%, 100% {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;background-color: yellow;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;50% {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;background-color: red;<br>
+        &nbsp;&nbsp;}<br>
+      }<br>
+          </code>
+        </section>
+        <section class="main-section" id="intermediate_css_animation">
+          <header><h1>Intermediate CSS Animation</h1></header>
+          <p>CSS animation sub-properties can be shortened like so:</p>
+          <code>.element {<br>
+        &nbsp;&nbsp;animation-name: stretch;<br>
+        &nbsp;&nbsp;animation-duration: 1.5s; <br>
+        &nbsp;&nbsp;animation-timing-function: ease-out; <br>
+        &nbsp;&nbsp;animation-delay: 0s;<br>
+        &nbsp;&nbsp;animation-direction: alternate;<br>
+        &nbsp;&nbsp;animation-iteration-count: infinite;<br>
+        &nbsp;&nbsp;animation-fill-mode: none;<br>
+        &nbsp;&nbsp;animation-play-state: running; <br>
+      }<br>
+      
+      <p id="commented">/*<br>
+        &nbsp;&nbsp;is the same as:<br>
+        */</p>
+      
+      .element {<br>
+        &nbsp;&nbsp;animation: <br>
+          &nbsp;&nbsp;stretch<br>
+          &nbsp;&nbsp;1.5s<br>
+          &nbsp;&nbsp;ease-out<br>
+          &nbsp;&nbsp;0s<br>
+          &nbsp;&nbsp;alternate<br>
+          &nbsp;&nbsp;infinite<br>
+          &nbsp;&nbsp;none<br>
+          &nbsp;&nbsp;running;<br>
+      }</code>    
+          <p>You can comma-separate the values to declare multiple animations on a selector as well. In the example below, we want to change the color of the circle in a @keyframe whilst also nudging it from side to side with another.</p>
+          <p>For more information on CSS animations, visit <a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank" ><b>CSS Tricks</b></a>.</p>
+        </section>
+        <section class="main-section" id="javascript">
+          <header><h1>Javascript</h1></header>
+          <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.</p>
+          <p>One of many JavaScript HTML methods is getElementById().</p>
+          <p>The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+          <p><b>Example:</b></p>
+          <code>document.getElementById("demo").innerHTML = "Hello JavaScript";</code>
+        </section>
+      </main>
+    
+</body>
+
+</html>
