@@ -47,4 +47,4 @@ document.addEventListener("DOMContentLoaded", function() {
         navBar.classList.remove("active");
         header.classList.remove("active");
     }
-}
+});
